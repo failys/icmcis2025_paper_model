@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<!DOCTYPE cairis_model PUBLIC "-//CAIRIS//DTD MODEL 1.0//EN" "http://cairis.org/dtd/cairis_model.dtd">
+<cairis_model>
+
+
+<tvtypes>
+<vulnerability_type name="Configuration" >
+  <description>A vulnerability resulting from an error in the configuration and administration of a system or component.</description>
+</vulnerability_type>
+<vulnerability_type name="Design" >
+  <description>A vulnerability inherent in the design or specification of hardware or software whereby even a perfect implementation will result in a vulnerability.</description>
+</vulnerability_type>
+<vulnerability_type name="Implementation" >
+  <description>A vulnerability resulting from an error made in implementing software or hardware of a satisfactory design.</description>
+</vulnerability_type>
+<threat_type name="Electronic/DoS and DDoS" >
+  <description>A Denial-of-Service (DoS) attack involves a malicious attempt to disrupt the operation of a computer system or network that is connected to the Internet.  A Distributed Denial-of-Service (DDoS) attack is a more dangerous evolution of a DoS attack because it utilises a network of compromised zombie computers to mount the attack, so there is no identifiable single source.</description>
+</threat_type>
+<threat_type name="Electronic/Hacking" >
+  <description>Hackers want to get into your computer system and use them for their own purposes.  There are many hacking tools available on the internet as well as online communities actively discussing hacking techniques enabling even unskilled hackers to break into unprotected systems.  Hackers have a range of motives; from showing off their technical prowess, to theft of money, credentials or information, to cause damage.</description>
+</threat_type>
+<threat_type name="Electronic/Keystoke logging" >
+  <description>Keystroke loggers work by recording the sequence of key-strokes that a user types in.  The more sophisticated versions use filtering mechanisms to only record highly prized information such as email addresses, passwords and credit card number sequences.</description>
+</threat_type>
+<threat_type name="Electronic/Malware" >
+  <description>Malware is any program or file that is harmful to a computer, the term covers viruses, worms, Trojan horses, and spyware.  Malware is becoming increasingly sophisticated and can be used to compromise computers to install DOS zombie programs or other malicious programs.</description>
+</threat_type>
+<threat_type name="Electronic/Phishing and Spoofing" >
+  <description>Phishing describes a social engineering process designed to trick an organisation's customers into imparting confidential information such as passwords, personal data or banking and financial details.  Most commonly these are criminal attacks but the same techniques could be used by others to get sensitive information.</description>
+</threat_type>
+<threat_type name="Insider/Manipulation" >
+  <description>Sometimes deliberate attempts are made to acquire information or access by manipulating staff by using a range of influencing techniques.  This is sometimes described as social engineering, creating situations in which someone will willingly provide access to information, sites or systems to someone unauthorised to receive it.  Customer facing personnel who have been trained to be helpful and informative can be particularly vulnerable to such attacks.</description>
+</threat_type>
+<threat_type name="Insider/Sabotage" >
+  <description>Saborage is often committed by a former employee seeking revenge on their employer because of a personal grudge caused by a negative work related event such as dismissal.  Although it is sometimes planned well in advance, it can also be the result of an opportunistic moment.</description>
+</threat_type>
+<threat_type name="Natural" >
+  <description>Environment / Acts of Nature</description>
+</threat_type>
+<threat_type name="Physical" >
+  <description>Physical Security</description>
+</threat_type>
+</tvtypes>
+
+<domainvalues>
+<threat_value name="None" >
+  <description>To be defined</description>
+</threat_value>
+<threat_value name="Low" >
+  <description>To be defined</description>
+</threat_value>
+<threat_value name="Medium" >
+  <description>To be defined</description>
+</threat_value>
+<threat_value name="High" >
+  <description>To be defined</description>
+</threat_value>
+<risk_value name="Negligible" >
+  <description>
+</description>
+</risk_value>
+<risk_value name="Tolerable" >
+  <description>
+</description>
+</risk_value>
+<risk_value name="Undesirable" >
+  <description>
+</description>
+</risk_value>
+<risk_value name="Intolerable" >
+  <description>
+</description>
+</risk_value>
+<countermeasure_value name="None" >
+  <description>To be defined</description>
+</countermeasure_value>
+<countermeasure_value name="Low" >
+  <description>To be defined</description>
+</countermeasure_value>
+<countermeasure_value name="Medium" >
+  <description>To be defined</description>
+</countermeasure_value>
+<countermeasure_value name="High" >
+  <description>To be defined</description>
+</countermeasure_value>
+<severity_value name="Negligible" >
+  <description>
+</description>
+</severity_value>
+<severity_value name="Marginal" >
+  <description>
+</description>
+</severity_value>
+<severity_value name="Critical" >
+  <description>
+</description>
+</severity_value>
+<severity_value name="Catastrophic" >
+  <description>
+</description>
+</severity_value>
+<likelihood_value name="Incredible" >
+  <description>
+</description>
+</likelihood_value>
+<likelihood_value name="Improbable" >
+  <description>
+</description>
+</likelihood_value>
+<likelihood_value name="Remote" >
+  <description>
+</description>
+</likelihood_value>
+<likelihood_value name="Occasional" >
+  <description>
+</description>
+</likelihood_value>
+<likelihood_value name="Probable" >
+  <description>
+</description>
+</likelihood_value>
+<likelihood_value name="Frequent" >
+  <description>
+</description>
+</likelihood_value>
+</domainvalues>
+
+<cairis>
+<project_settings name="New Project" >
+  <background>None</background>
+  <strategic_goals>None</strategic_goals>
+  <rich_picture image="" />
+  <scope>None</scope>
+</project_settings>
+<environment name="Default" short_code="DEF" >
+  <definition>Default environment</definition>
+  <asset_values>
+    <none>To be defined</none>
+    <low>To be defined</low>
+    <medium>To be defined</medium>
+    <high>To be defined</high>
+  </asset_values>
+</environment>
+</cairis>
+
+<riskanalysis>
+<asset name="Participant" short_code="P" type="Systems" is_critical="0">
+  <description>The providers and receivers of data in an exchange. </description>
+  <significance>Multiple participants can provide Data Items and 
+Delivery Items can be received by multiple participants.</significance>
+  <critical_rationale></critical_rationale>
+  <security_property environment="Default" property="integrity" value="Low">
+    <rationale>Participant corruption out of scope.</rationale>
+  </security_property>
+  <security_property environment="Default" property="availability" value="Medium">
+    <rationale>Failure of this component may result in the inability to distribute data</rationale>
+  </security_property>
+</asset>
+<asset name="Delivery Interaction" short_code="DI" type="Systems" is_critical="0">
+  <description>An interaction between participants to deliver data</description>
+  <significance>None</significance>
+  <critical_rationale></critical_rationale>
+  <security_property environment="Default" property="confidentiality" value="Low">
+    <rationale>Details of the interaction should not be visible to other participants.</rationale>
+  </security_property>
+  <security_property environment="Default" property="integrity" value="Medium">
+    <rationale>Stipulated need to protect integrity of data and interactions associated with them.</rationale>
+  </security_property>
+  <security_property environment="Default" property="availability" value="Medium">
+    <rationale>Failure of this component may result in the inability to distribute data</rationale>
+  </security_property>
+</asset>
+<asset name="Distribution Capability" short_code="DECA" type="Systems" is_critical="0">
+  <description>The capability of the component to deliver data, e.g. the range of delivery interactions which the component can support given available delivery resources.</description>
+  <significance>How the capability is implemented and configured impacts the range of supported interactions.</significance>
+  <critical_rationale></critical_rationale>
+  <security_property environment="Default" property="integrity" value="Medium">
+    <rationale>Corruption of the capability impacts the data it distributes.</rationale>
+  </security_property>
+  <security_property environment="Default" property="availability" value="Medium">
+    <rationale>Loss of capability leads to an inability to distribute data.</rationale>
+  </security_property>
+</asset>
+<asset name="Delivery Resource" short_code="DER" type="Systems" is_critical="0">
+  <description>The resources available for the component to perform a data exchange, e.g. communication and network resources, or cryptographic devices.</description>
+  <significance>The delivery capabilities relies on a delivery resource to operate.</significance>
+  <critical_rationale></critical_rationale>
+  <security_property environment="Default" property="availability" value="Medium">
+    <rationale>Necessary to operate the capability</rationale>
+  </security_property>
+</asset>
+<asset name="Data Item" short_code="DAI" type="Information" is_critical="0">
+  <description>A specific item of data to be distributed, e.g. a sensor measurement or a TDL message.</description>
+  <significance>Necessary for safe aircraft operation.</significance>
+  <critical_rationale></critical_rationale>
+  <security_property environment="Default" property="confidentiality" value="Low">
+    <rationale>Data items require no particular protection from unauthorised sight.</rationale>
+  </security_property>
+  <security_property environment="Default" property="integrity" value="Medium">
+    <rationale>Data items play an important role in maintaining system integrity.</rationale>
+  </security_property>
+  <security_property environment="Default" property="availability" value="Low">
+    <rationale>Some resilience available in the event of data loss.</rationale>
+  </security_property>
+</asset>
+<asset name="Delivery Item" short_code="DEI" type="Information" is_critical="0">
+  <description>The item of collated/decomposed and formatted data items to be delivered to the participants including any required metadata or overhead, e.g. mission report, release of mission data, IP packet.</description>
+  <significance>Necessary for the exchange of data items.</significance>
+  <critical_rationale></critical_rationale>
+  <security_property environment="Default" property="confidentiality" value="Low">
+    <rationale>Confidentity of delivery items require no special protection.</rationale>
+  </security_property>
+  <security_property environment="Default" property="integrity" value="Medium">
+    <rationale>Tampering could alter the data item, and subsequent system integrity.</rationale>
+  </security_property>
+  <security_property environment="Default" property="availability" value="Low">
+    <rationale>Resilience in the event of data loss.</rationale>
+  </security_property>
+</asset>
+<asset name="Formatting Rule" short_code="FOR" type="Systems" is_critical="0">
+  <description>The rules for configuring the required data items(s) into a specific format for delivery, e.g. the construction rules for a mission report, the structure of specific IP packets.</description>
+  <significance>Must be both efficient and effective for there to be no undue impact on the mission system.</significance>
+  <critical_rationale></critical_rationale>
+  <security_property environment="Default" property="integrity" value="Medium">
+    <rationale>Corruption in the rules or the operation of them could impact item delivery.</rationale>
+  </security_property>
+  <security_property environment="Default" property="availability" value="Medium">
+    <rationale>Inability to format data items and delivery items renders the capability unavailable.</rationale>
+  </security_property>
+</asset>
+<asset_association environment="Default"  head_name="Data Item" head_nav="0" head_adornment="Association" head_nry="a" head_role="r,w" tail_role="r,w" tail_nry="a" tail_adornment="Association" tail_nav="0" tail_name="Formatting Rule">
+  <rationale>None</rationale>
+</asset_association>
+<asset_association environment="Default"  head_name="Delivery Interaction" head_nav="0" head_adornment="Association" head_nry="a" head_role="" tail_role="r" tail_nry="a" tail_adornment="Association" tail_nav="1" tail_name="Data Item">
+  <rationale></rationale>
+</asset_association>
+<asset_association environment="Default"  head_name="Delivery Interaction" head_nav="0" head_adornment="Association" head_nry="a" head_role="" tail_role="r,x" tail_nry="1" tail_adornment="Association" tail_nav="0" tail_name="Distribution Capability">
+  <rationale></rationale>
+</asset_association>
+<asset_association environment="Default"  head_name="Formatting Rule" head_nav="0" head_adornment="Association" head_nry="a" head_role="" tail_role="w" tail_nry="a" tail_adornment="Association" tail_nav="0" tail_name="Delivery Item">
+  <rationale></rationale>
+</asset_association>
+<asset_association environment="Default"  head_name="Participant" head_nav="0" head_adornment="Association" head_nry="a" head_role="" tail_role="w" tail_nry="a" tail_adornment="Association" tail_nav="0" tail_name="Delivery Interaction">
+  <rationale>None</rationale>
+</asset_association>
+<asset_association environment="Default"  head_name="Distribution Capability" head_nav="0" head_adornment="Association" head_nry="a" head_role="" tail_role="r,w" tail_nry="a" tail_adornment="Association" tail_nav="1" tail_name="Delivery Item">
+  <rationale></rationale>
+</asset_association>
+<asset_association environment="Default"  head_name="Distribution Capability" head_nav="0" head_adornment="Association" head_nry="a" head_role="" tail_role="x" tail_nry="a" tail_adornment="Association" tail_nav="1" tail_name="Delivery Resource">
+  <rationale></rationale>
+</asset_association>
+
+</riskanalysis>
+
+<usability>
+</usability>
+
+<goals>
+<goal name="Capture requirements for data distribution" originator="Anon">
+  <goal_environment name="Default" category="Maintain" priority="High" >
+    <definition>To capture Distribution Requirements for distribution of Delivery Items</definition>
+    <fit_criterion>None</fit_criterion>
+    <issue>None</issue>
+  </goal_environment>
+</goal>
+<goal name="Participant interaction" originator="Anon">
+  <goal_environment name="Default" category="Maintain" priority="High" >
+    <definition>The component shall facilitate interaction between participants to deliver data.</definition>
+    <fit_criterion>None</fit_criterion>
+    <issue>None</issue>
+    <concern name="Participant" />
+    <concern name="Delivery Interaction" />
+    <policy subject="Participant" access="write" resource="Delivery Interaction" permission="allow" />
+  </goal_environment>
+</goal>
+<goal name="Data item provision" originator="Anon">
+  <goal_environment name="Default" category="Maintain" priority="High" >
+    <definition>The component shall facilitate provision of data items from participants for delivery interaction.</definition>
+    <fit_criterion>None</fit_criterion>
+    <issue>None</issue>
+    <concern name="Participant" />
+    <concern name="Data Item" />
+    <policy subject="Participant" access="read" resource="Data Item" permission="allow" />
+  </goal_environment>
+</goal>
+<goal name="Delivery format" originator="Anon">
+  <goal_environment name="Default" category="Maintain" priority="High" >
+    <definition>The component shall configure data items into a specific format for delivery</definition>
+    <fit_criterion>None</fit_criterion>
+    <issue>None</issue>
+    <concern name="Data Item" />
+    <concern name="Formatting Rule" />
+    <policy subject="Formatting Rule" access="read" resource="Data Item" permission="allow" />
+  </goal_environment>
+</goal>
+<goal name="Assess distribution capability" originator="Anon">
+  <goal_environment name="Default" category="Maintain" priority="High" >
+    <definition>The component shall access the distribution capability to distribute delivery items taking into account system health and observed anomalies.</definition>
+    <fit_criterion>None</fit_criterion>
+    <issue>None</issue>
+    <concern name="Delivery Interaction" />
+    <concern name="Distribution Capability" />
+    <policy subject="Delivery Interaction" access="read" resource="Distribution Capability" permission="allow" />
+  </goal_environment>
+</goal>
+<goal name="Distribute data" originator="Anon">
+  <goal_environment name="Default" category="Maintain" priority="High" >
+    <definition>The component shall distribute delivery items in accordance with the agreed data distribution solution.</definition>
+    <fit_criterion>None</fit_criterion>
+    <issue>None</issue>
+    <concern name="Distribution Capability" />
+    <concern name="Delivery Item" />
+    <policy subject="Distribution Capability" access="write" resource="Delivery Item" permission="allow" />
+  </goal_environment>
+</goal>
+<goal name="Gather data" originator="Anon">
+  <goal_environment name="Default" category="Maintain" priority="High" >
+    <definition>The component shall gather a data item for distribution to a participant with an agreed data distribution solution using delivery resources.</definition>
+    <fit_criterion>None</fit_criterion>
+    <issue>None</issue>
+    <concern name="Delivery Interaction" />
+    <concern name="Data Item" />
+    <policy subject="Delivery Interaction" access="read" resource="Data Item" permission="allow" />
+  </goal_environment>
+</goal>
+<goal name="Format data" originator="Anon">
+  <goal_environment name="Default" category="Maintain" priority="High" >
+    <definition>The component shall format a delivery item using the specified formatting rules for distribution to a participant in accordance with an agreed data distribution solution.</definition>
+    <fit_criterion>None</fit_criterion>
+    <issue>None.</issue>
+    <concern name="Delivery Item" />
+    <concern name="Formatting Rule" />
+    <policy subject="Formatting Rule" access="write" resource="Delivery Item" permission="allow" />
+  </goal_environment>
+</goal>
+</goals>
+
+<associations>
+<goal_association environment="Default"  goal_name="Capture requirements for data distribution" goal_dim="goal" ref_type="and" subgoal_name="Distribute data" subgoal_dim="goal" alternative_id="0" >
+  <rationale>None</rationale>
+</goal_association>
+<goal_association environment="Default"  goal_name="Capture requirements for data distribution" goal_dim="goal" ref_type="and" subgoal_name="Participant interaction" subgoal_dim="goal" alternative_id="0" >
+  <rationale>None</rationale>
+</goal_association>
+<goal_association environment="Default"  goal_name="Capture requirements for data distribution" goal_dim="goal" ref_type="and" subgoal_name="Format data" subgoal_dim="goal" alternative_id="0" >
+  <rationale>None</rationale>
+</goal_association>
+<goal_association environment="Default"  goal_name="Capture requirements for data distribution" goal_dim="goal" ref_type="and" subgoal_name="Gather data" subgoal_dim="goal" alternative_id="0" >
+  <rationale>None</rationale>
+</goal_association>
+<goal_association environment="Default"  goal_name="Capture requirements for data distribution" goal_dim="goal" ref_type="and" subgoal_name="Data item provision" subgoal_dim="goal" alternative_id="0" >
+  <rationale>None</rationale>
+</goal_association>
+<goal_association environment="Default"  goal_name="Capture requirements for data distribution" goal_dim="goal" ref_type="and" subgoal_name="Delivery format" subgoal_dim="goal" alternative_id="0" >
+  <rationale>None</rationale>
+</goal_association>
+<goal_association environment="Default"  goal_name="Capture requirements for data distribution" goal_dim="goal" ref_type="and" subgoal_name="Assess distribution capability" subgoal_dim="goal" alternative_id="0" >
+  <rationale>None</rationale>
+</goal_association>
+</associations>
+
+<synopses>
+</synopses>
+
+<misusability>
+</misusability>
+
+<dataflows>
+</dataflows>
+
+
+
+<stories>
+</stories>
+
+</cairis_model>
